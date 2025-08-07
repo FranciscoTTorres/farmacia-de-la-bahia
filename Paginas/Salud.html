@@ -9,8 +9,8 @@
 <body id="salud-page">
     <header>
         <h1>FARMACIA DE LA BAHIA</h1>
-        <nav>
-            <ul>
+        <nav class="nav-bar">
+            <ul class="nav-list">
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="Promociones.html">PROMOCIONES</a></li>
                 <li><a href="Salud.html">SALUD</a></li>
@@ -24,35 +24,173 @@
     <main id="seccion-main">
         <section class="salud-main">
             <h2>Tu Bienestar es Nuestra Prioridad</h2>
-            <p>Encontra una amplia gama de medicamentos, productos de cuidados personales y soluciones para tu salud diaria.</p>
-            <img src="../salud-imagen.png" alt="botiquin de salud" style="max-width: 100%; height: auto; margin-top: 20px;">
+            <img src="../img/Cartel Salud.jpg" alt="Cartel de Salud">
         </section>
 
         <section class="salud-categoria">
-            <div class="categoria-principal"> <h3>Medicamentos de Venta Libre</h3>
+            <div class="categoria-principal"> 
+                <a href="#medicamentos" class="redireccion"><h3>Medicamentos de Venta Libre</h3></a>
                 <p>Analgésicos, antigripales, antiácidos y más.</p>
                 
             </div>
             <div class="categoria-principal">
-                <h3>Primeros Auxilios</h3>
+                <a href="#primeros-auxilios" class="redireccion"><h3>Primeros Auxilios</h3></a>
                 <p>Material de curación, antisépticos, vendas.</p>
                 
             </div>
             <div class="categoria-principal">
-                <h3>Cuidado Personal de la Salud</h3>
+               <a href="cuidados-personales" class="redireccion"><h3>Cuidado Personal de la Salud</h3></a> 
                 <p>Termómetros, tensiómetros, nebulizadores.</p>
                 
             </div>
         </section>
 
-        <section class="articulos-salud">
+        <section class="categoria-principal">
             <h3>Artículos de Interés sobre Salud</h3>
             <p>Mantente informado con nuestros posts sobre prevención y buenos hábitos.</p>
         </section>
+
+        <section class="promociones-bancarias">
+            <img src="../img/Santander-promo.jpg" alt="Promocion del Banco Santander">
+            <img src="../img/macro-promocion.png" alt="Promocion del Banco Macro">
+            <img src="../img/brubank-promocion.jpg" alt="Promocion del Banco Brubank">
+        </section>
+        <section id="medicamentos" class="medicamentos-venta-libre">
+            <h2>Medicamentos de venta libre:</h2>
+          <div class="medicamentos-lista">
+
+            <div class="medicamentos-item">
+                <h3>Actron 600</h3>
+            <img src="../img/actron.jpg" alt="Caja de Actron 600" width="150" height="200">
+            <p>Analgésico y antiinflamatorio.</p>
+            <p class="presentacion">Presentación: 10 cápsulas blandas</p>
+            <p class="precio">$X.XXX</p>
+            <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="medicamentos-item">
+            <h3>Tafirol</h3>
+            <img src="../img/tafirol.jpg" alt="Caja de Tafirol Plus 8 capsulas blandas" width="150" height="200">
+            <p>Analgésico y antifebril.</p>
+            <p class="presentacion"> Presentacion: 8 capsulas blandas</p>
+            <p class="precio">$X.XXX</p>
+            <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="medicamentos-item">
+                <h3>Next</h3>
+                <img src="../img/next-medicamento.jpg" alt="Caja de Next 10 comprimidos" width="150" height="200">
+                <p>Analgésico y descongestivo para el alivio de los síntomas del resfriado y la gripe.</p>
+                <p class="presentacion"> Presentacion: 10 comprimidos</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="medicamentos-item">
+                <h3>Buscapina</h3>
+                <img src="../img/buscapina.jpg" alt="Caja de Buscapina 20 comprimidos" width="150" height="200">
+                <p>Especialmente formulada para el alivio rápido de dolores y espasmos en el abdomen.</p>
+                 <p class="presentacion"> Presentacion: 20 comprimidos</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="medicamentos-item">
+                <h3>Adermicina</h3>
+                <img src="../img/Adermicina.jpg" alt="Caja de Adermicina crema 60 gramos" width="150" height="200">
+                <p>Ayuda a prevenir y curar irritaciones de la piel, quemaduras leves y paspaduras.</p>
+                 <p class="presentacion"> Presentacion: 60 gramos</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="medicamentos-item">
+                <h3>Uvasal</h3>
+                <img src="../img/uvasal.jpg" alt="Caja de Uvasal 6 sobres de 5 gramos" width="150" height="200">
+                <p>Antiácido de acción rápida. </p>
+                 <p class="presentacion"> Presentacion: 6 sobres de 5 gramos</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+            </div>
+        </section>
+        <section id="primeros-auxilios" class="primeros-auxilios">
+            <h2>Productos de Primeros Auxilios</h2>
+            <div class="auxilios-lista">
+
+            <div class="auxilios-item">
+                <h3>Curitas</h3>
+                <img src="../img/curitaas.jpg" alt="Curitas tela elastica 20 unidades">
+                <p>Curitas tela elastica comodas y flexibles al movimiento de las articulaciones </p>
+                 <p class="presentacion"> Presentacion: 20 unidades</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+            <div class="auxilios-item">
+                <h3>Alcohol Etilico</h3>
+                <img src="../img/OIP.webp" alt="Alcohol Etilico de 250 ml">
+                <p> Antiséptico de rápida acción y gran eficacia.</p>
+                 <p class="presentacion"> Presentacion: Botella 250 ml</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+
+             <div class="auxilios-item">
+                <h3>Pervinox</h3>
+                <img src="../img/pervinox.jpg" alt="Pervinox 40 ml">
+                <p>  Ideal para desinfectar heridas, cortes y quemaduras leves, previniendo infecciones.</p>
+                 <p class="presentacion"> Presentacion: Botella 40 ml</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+              <div class="auxilios-item">
+                <h3>Algodon</h3>
+                <img src="../img/algodon.jpg" alt="Algodon 200 gramos">
+                <p> Suaves, hipoalergénicos y de uso sanitario.</p>
+                 <p class="presentacion"> Presentacion: Paquete 200 gr</p>
+                <p class="precio">$X.XXX</p>
+                <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+            </div>
+        </section>
+        <section id="cuidados-personales" class="controles-personales">
+            <h2>Productos de Controles Personales</h2>
+            <div class="personales-lista">
+                <div class="personales-item">
+                    <h3>Nebulizador</h3>
+                    <img src="../img/nebulizador.jpg" alt="Nebulizador">
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+
+                <div class="personales-item">
+                    <h3>Pulsioximetro</h3>
+                    <img src="../img/pulsioximetro.webp" alt="Pulsioximetro">
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+                <div class="personales-item">
+                    <h3>Tensiometro</h3>
+                    <img src="../img/tensiometro.jpg" alt="Tensiometro">
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+                
+                <div class="personales-item">
+                    <h3>Termometro</h3>
+                    <img src="../img/termometro.jpg" alt="Termometro">
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+        <section class="articulos-interes"></section>
     </main>
 
     <footer>
         <p>&copy; FARMACIA DE LA BAHIA, PLAYA UNION. Siempre junto a vos.</p>
     </footer>
 </body>
-</html>
+</html>  
+
