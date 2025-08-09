@@ -1,0 +1,87 @@
+@use "../variables";
+body{
+    font-family: variables.$font-family;
+    background-color: variables.$bg_body;
+    color: variables.$text-negro;
+    line-height: 1.6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: variables.$bg_main;
+  border-radius: 10px;
+  box-shadow: 0 0 15px variables.$shadow-suave; 
+}
+
+.bienvenida {
+    text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+   h2 {
+    color: variables.$primary-color; 
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-shadow: 0.5px 0.5px 1px variables.$shadow-suave;
+  }
+    p{
+        font-size: 1.2em;
+        max-width: 750px;
+        margin: 0 auto;
+        color: variables.$text-claro;
+    }}
+
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.categoria-principal {
+  background-color: variables.$secondary_color;
+  border: 2px solid variables.$border-light;
+  border-radius: 10px;
+  padding: 25px;
+  transition: transform 0.3s;
+   
+        &:hover {
+            transform: translateY(-5px);
+        }
+        h3 a {
+        text-decoration: none;
+        color: #0056b3; 
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+         p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #666; 
+  }
+}
+
+.box-model-demo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 40px;
+}
+.padding-box,
+
+.margin-box,
+.box-model {
+  width: 220px;
+  height: 100px;
+  background-color: variables.$terciary-color; 
+  padding: 20px;
+  text-align: center;
+  border: 5px solid variables.$text-negro; 
+  margin: 30px;
+}
+.border-box {
+  border: 5px solid variables.$text-negro;
+}
