@@ -4,6 +4,10 @@
 
 @use "./layout/body";
 
+@use "./abstracts/mixins.scss";
+
+@use"./paginas/salud";
+
 @use "./layout/footer";
 
 

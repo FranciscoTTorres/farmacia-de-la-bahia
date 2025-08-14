@@ -1,0 +1,24 @@
+@mixin  titulo-seccion-producto {
+    font-size: 2rem;
+    border-bottom: 1px solid #121315;
+    border-top: 1px solid #121315;
+    padding-bottom:5px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+@mixin lista-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+@mixin item-producto {
+width: calc(33.33% - 20px);
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+

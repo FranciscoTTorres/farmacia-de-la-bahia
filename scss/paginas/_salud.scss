@@ -1,0 +1,89 @@
+@use "../abstracts/mixins.scss";
+
+.salud-main {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 2.5em;
+    color: #050505;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  img {
+  height: 400px;
+  width: 750px;
+  margin-left: 82px;
+  }
+}
+.redireccion {
+  text-decoration: none;
+  color: #333;
+
+  &hover {
+    color: #007bff;
+  }
+}
+
+.promociones-bancarias {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    max-width: 30%;
+    height: auto;
+  }
+}
+
+.medicamentos-venta-libre,
+ .primeros-auxilios,
+  .controles-personales{
+   h2 {
+    @include mixins.titulo-seccion-producto;
+   }
+}
+
+.medicamentos-lista,
+.auxilios-lista,
+.personales-lista{
+  h2{
+    @include mixins.lista-producto;
+  }
+}
+
+.medicamentos-item,
+.auxilios-item,
+.personales-item {
+  @include mixins.item-producto;
+  img {
+  width: 150px;
+  height: 200px;
+  object-fit: fill;
+  }
+  h3 {
+    font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  }
+  .precio  {
+  font-weight: bold;
+  }
+}
+
+.boton-comprar {
+  background-color: #4b4f52;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &hover {
+   background-color: #2b3036;
+  }
+}
+
