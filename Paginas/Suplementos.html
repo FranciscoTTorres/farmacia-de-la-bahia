@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPLEMENTOS - FARMACIA DE LA BAHIA</title>
-    <link rel="stylesheet" href="../style.css"> </head>
+    <meta name="keywords" content="suplemento, proteina, creatina, aminoacidos, cafeina, recuperacion muscular">
+    <meta name="description" content="pagina que presenta la venta de suplementos dietarios como proteina creatina, aminoacidos, preentrenos y varios mas">
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
 <body id="Suplementos">
 
 <header>
-    <h1>FARMACIA DE LA BAHIA</h1>
+      <div class="brand">
+    <div class="logo">
+     <img src="../img/logo-farmacia.png" alt="Farmacia de la Bahía">
+    </div>
+      <h1>FARMACIA DE LA BAHÍA</h1>
+    </div>
     <nav class="nav-bar">
         <ul class="nav-list">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="Promociones.html">PROMOCIONES</a></li>
             <li><a href="Salud.html">SALUD</a></li>
             <li><a href="Belleza.html">BELLEZA</a></li>
             <li><a href="Suplementos.html">SUPLEMENTOS</a></li>
             <li><a href="Nosotros.html">NOSOTROS</a></li>
         </ul>
+        <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </nav>
 </header>
 
@@ -28,61 +43,168 @@
     </section>
 
     <section class="suplemento-categoria">
-        <h3>Proteínas</h3>
+           
+        <h3>Proteínas: </h3>
+                
         <p>Las proteínas son esenciales para la construcción y reparación muscular, ideales para deportistas y personas que buscan mantener una dieta equilibrada.</p>
-        <ul>
-            <li>Proteína de Suero (Whey Protein): Ideal para recuperación post-entrenamiento.</li>
-            <li>Caseína: De absorción lenta, perfecta para consumir antes de dormir.</li>
-            <li>Proteína Vegetal: Opciones a base de soja, guisante o arroz para dietas veganas.</li>
-            <li>Ganadores de Peso (Mass Gainers): Para quienes buscan aumentar masa muscular y peso.</li>
-            <li>ENA WHEY PROTEIN - Sabor chocolate, 25g de proteína por porción.</li>
-            <li>STAR NUTRITION -  Sin lactosa, ideal para intolerantes, 25g por porción.</li>
-        </ul>
-    </section>
+                <div class="suplemento-lista">
+                    <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/proteina-ena.jpg" alt="Proteina ENA" width="150" height="200">
+                            
+                            <div class="overlay">
+                                <p>Aumentar masa muscular y peso.</p>
+                            </div>
+                        </div>
+                        <h4>Proteína ENA (Whey Protein)</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                    </div>
+                    <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/proteina-star.jpg" alt="Proteina Star Nutrition" width="150" height="200">
+                            
+                            <div class="overlay">
+                                <p>Sin lactosa, ideal para intolerantes, 25g por porción.</p>
+                            </div>
+                        </div>
+                            <h4>Proteina STAR NUTRITION (Whey Protein) </h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                    </div>
 
-    ---
-
+                     <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/ena-ultra-mass-.jpeg" alt="Proteina Ultra Mass" width="150" height="200">
+                            <div class="overlay">
+                                <p>Aumento de masa, proteina mas carbohidratos.</p>
+                            </div>
+                        </div>
+                        <h4>ENA Ultra Mass</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                    </div>
+                    <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/ena-proteina-vegetal.jpeg" alt="Proteina Vegetal ENA" width="150" height="200">
+                           
+                            <div class="overlay">
+                                <p>Aumento de masa muscular, hecho a base de plantas.</p>
+                            </div>
+                        </div>
+                         <h4>Proteina Vegetal ENA</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                    </div>
+                     <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/ena-barra-proteica.png" alt="Barra Proteica ENA" width="150" height="200">
+                           
+                            <div class="overlay">
+                                <p>Barras con alto porcentaje de proteinas.</p>
+                            </div>
+                        </div>
+                         <h4>Barras proteicas ENA</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </section>
     <section class="suplemento-categoria">
         <h3>Creatinas</h3>
         <p>La creatina es uno de los suplementos más investigados y efectivos para mejorar la fuerza, potencia y rendimiento en ejercicios de alta intensidad.</p>
-        <ul>
-            <li>Creatina Monohidratada: La forma más común y estudiada, ideal para aumentar la fuerza.</li>
-            <li>Creatina Micronizada: Se disuelve mejor, facilitando su consumo.</li>
-            <li>ENA CREATINA: 300g, sabor frutilla]</li>
-            <li>STAR NUTRITION CREATINE: 200g, sabor neutro.</li>
-            </ul>
+            <div class="suplemento-lista">
+                <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/creatina-ena.jpeg" alt="Creatina Micronizada ENA" width="150" height="200">
+                            
+                            <div class="overlay">
+                                <p>Ideal para aumentar la fuerza. 300 g sabor frutilla.</p>
+                            </div>
+                        </div>
+                        <h4>Creatina Micronizada ENA</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+
+                <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="imagen-container">
+                            <img src="../img/creatina-star.jpg" alt="Creatina Microhidratada Star Nutrition" width="150" height="200">
+                            
+                            <div class="overlay">
+                                <p>Creatina de facil absorcion, 200g, sabor neutro.</p>
+                            </div>
+                        </div>
+                        <h4>Creatina Mihidratada Star Nutrition</h4>
+                            <p class="presentacion"></p>
+                            <p class="precio">$X.XXX</p>
+                            <button class="boton-comprar">Agregar al Carrito</button>
+                </div>
+            </div>
+            
     </section>
 
-    ---
+  
 
     <section class="suplemento-categoria">
-        <h3>Aminoácidos</h3>
-        <p>Los aminoácidos son los bloques constructores de las proteínas, vitales para la recuperación muscular, la reducción de la fatiga y el apoyo al crecimiento.</p>
-        <ul>
-            <li>BCAA (Aminoácidos de Cadena Ramificada): Leucina, Isoleucina y Valina, clave para la síntesis proteica.</li>
-            <li>Glutamina: Apoya la recuperación muscular y el sistema inmunológico.</li>
-            <li>EAA (Aminoácidos Esenciales): Todos los aminoácidos que el cuerpo no puede producir por sí mismo.</li>
-            </ul>
-        <p><em>Optimiza tu recuperación y rendimiento con nuestra variedad de aminoácidos.</em></p>
+        
+            <h3>Aminoácidos</h3>
+            <p>Los aminoácidos son los bloques constructores de las proteínas, vitales para la recuperación muscular, la reducción de la fatiga y el apoyo al crecimiento.</p>
+            <div class="suplemento-lista">
+            <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="imagen-container">
+                    <img src="../img/star-bcaa.jpg" alt="Aminoacidos Star Nutrition" width="150" height="200">
+                    
+                    <div class="overlay">
+                        <p>Aminoácidos de Cadena Ramificada. Ideal para aumentar la fuerza. 300 g sabor frutilla.</p>
+                    </div>
+                </div>
+                <h4>BCAA Star Nutrition</h4>
+                    <p class="presentacion"></p>
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+            <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="imagen-container">
+                    <img src="../img/ena-glutamina.jpeg" alt="Glutamina ENA" width="150" height="200">
+                    <div class="overlay">
+                        <p>Apoya la recuperación muscular y el sistema inmunológico.</p>
+                    </div>
+                </div>
+                    <h4>Glutamina ENA</h4>
+                    <p class="presentacion"></p>
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+            <div class="suplemento-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="imagen-container">
+                    <img src="../img/ena-eaa.jpeg" alt="Aminoacidos Esenciales ENA" width="150" height="200">
+                    
+                    <div class="overlay">
+                        <p>Todos los aminoácidos que el cuerpo no puede producir por sí mismo.</p>
+                    </div>
+                </div>
+                <h4>EAA Aminoacido Esenciales ENA</h4>
+                    <p class="presentacion"></p>
+                    <p class="precio">$X.XXX</p>
+                    <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+        </div>
     </section>
-
-    ---
-
-    <section class="suplemento-categoria">
-        <h3>Multivitamínicos</h3>
-        <p>Los **multivitamínicos** aseguran que tu cuerpo reciba todas las vitaminas y minerales esenciales para funcionar correctamente, apoyando la energía, el sistema inmune y la salud general.</p>
-        <ul>
-            <li>Multivitamínico para Hombres: Formulado para las necesidades específicas masculinas.</li>
-            <li>Multivitamínico para Mujeres: Adaptado a los requerimientos nutricionales femeninos.</li>
-            <li>Multivitamínico con Minerales: Para un soporte completo.</li>
-    </section>
-
-
 </main>
 
 <footer>
     <p>&copy; FARMACIA DE LA BAHIA, PLAYA UNION. Siempre junto a vos.</p>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+</script>
 </body>
 </html>

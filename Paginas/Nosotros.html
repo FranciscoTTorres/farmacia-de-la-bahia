@@ -3,28 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="pagina que cuenta la historia de la farmacia y medios para contactarse con la misma">
   <title>NOSOTROS - FARMACIA DE LA BAHÍA</title>
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body id="Nosotros">
 
   <header>
-    <h1>FARMACIA DE LA BAHÍA</h1>
+    <div class="brand">
+      <div class="logo">
+        <img src="../img/logo-farmacia.png" alt="Farmacia de la Bahía">
+      </div>
+      <h1>FARMACIA DE LA BAHÍA</h1>
+    </div>
     <nav class="nav-bar">
       <ul class="nav-list">
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="Promociones.html">PROMOCIONES</a></li>
         <li><a href="Salud.html">SALUD</a></li>
         <li><a href="Belleza.html">BELLEZA</a></li>
         <li><a href="Suplementos.html">SUPLEMENTOS</a></li>
         <li><a href="Nosotros.html">NOSOTROS</a></li>
       </ul>
+      <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </nav>
   </header>
 
  
   <main>
-    <section class="nosotros-info">
+    <section class="nosotros-info " data-aos="fade-up">
       <h2>Sobre Nosotros</h2>
       <p>¡Bienvenido a Farmacia de la Bahía! Somos tu aliado de confianza para el cuidado de tu salud y bienestar en Playa Unión. Desde 2011, nos hemos dedicado a ofrecer una amplia gama de productos farmacéuticos, de belleza y suplementos nutricionales, siempre con un enfoque en la calidad y el servicio al cliente.</p>
 
@@ -54,37 +67,39 @@
 
     <hr />
 
-    <section class="contacto-form">
+    <section class="contacto-form" data-aos="fade-up">
       <h2>Contáctanos</h2>
       <p>¿Tienes alguna pregunta, sugerencia o necesitas asistencia? Completá el siguiente formulario y nos pondremos en contacto contigo a la brevedad.</p>
 
-      <form action="#" method="POST" class="form-grid">
-        <div>
+      <form action="#" method="POST" class="form-grid" data-aos="fade-up" >
+        <div data-aos="fade-up"></div>
+        
+          <div data-aos="fade-up" data-aos-delay="200">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required />
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="300">
           <label for="apellido">Apellido:</label>
           <input type="text" id="apellido" name="apellido" required />
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
         </div>
 
-        <div>
+        <div class="consulta-box" data-aos="fade-up" data-aos-delay="500">
           <label for="telefono">Número de Teléfono:</label>
           <input type="tel" id="telefono" name="telefono" />
         </div>
 
-        <div class="consulta-box">
+        <div class="consulta-box"data-aos="fade-up" data-aos-delay="500">
           <label for="consulta">Tu Consulta:</label>
           <textarea id="consulta" name="consulta" rows="5" required></textarea>
         </div>
 
-        <button type="submit">Enviar Consulta</button>
+        <button type="submit" data-aos="fade-up" data-aos-delay="500">Enviar Consulta</button>
       </form>
     </section>
   </main>
@@ -93,7 +108,10 @@
   <footer>
     <p>&copy; FARMACIA DE LA BAHÍA, PLAYA UNIÓN. Siempre junto a vos.</p>
   </footer>
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+</script>
 </body>
 </html>
 

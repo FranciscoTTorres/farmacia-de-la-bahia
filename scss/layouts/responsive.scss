@@ -1,0 +1,337 @@
+
+/*---------------- header responsive---------------------*/
+@media (min-width: 1024px) {
+    header {
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem; 
+    text-align: left; 
+    margin-right: auto;
+    }
+    .logo img {
+        height: 90px;
+    }
+    h1 {
+        font-size: 2rem; 
+    }
+    
+
+
+    .search-box {
+        width: auto; 
+        justify-content: flex-start;
+        input[type="text"] {
+            width: 250px; 
+        }
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        .nav-list {
+            flex-direction: row; 
+            gap: 20px;
+        }
+    }
+}
+    /*---------body responsive---------*/
+    @media (min-width: 768px) {
+  
+  main {
+    padding: 20px;
+  }
+
+  .bienvenida h2 {
+    font-size: 2.2em; 
+  }
+
+  .bienvenida p {
+    font-size: 1.2em;
+  } 
+  .grid-categorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .categoria-principal img {
+    height: 200px; 
+  }
+
+  .categoria-principal h3 a {
+    font-size: 1.4em;
+  }
+
+  .categoria-principal p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .grid-categorias {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+/*-----------responsive suplementos------------*/
+@media (min-width: 768px) {
+  .suplementos-intro { 
+    margin-bottom: 30px; 
+      h2 { 
+        font-size: 2.2rem; 
+      }
+      }
+  .suplemento-categoria {
+    h3 {
+       font-size: 1.8rem; 
+      }
+    p  {
+       font-size: 1.1rem;
+       }
+}
+  .suplemento-lista {
+     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .suplemento-item {
+  h4 { 
+    font-size: 1.15rem;
+   }
+}
+}
+@media (min-width: 1024px) {
+  .suplementos-intro { 
+    margin-bottom: 40px; 
+      h2 { 
+        font-size: 2.4rem;
+      }
+  }
+
+  .suplemento-categoria{
+     h3 { 
+      font-size: 2rem; 
+    }
+     p  {
+       font-size: 1.15rem; 
+      }
+  }
+  .suplemento-lista {
+     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .suplemento-item {
+    flex: 1 1 300px; 
+  .precio {
+     font-size: 1.1rem;
+     }
+}
+}
+/*------------------responsive salud------------------------*/
+@media (min-width: 768px) {
+  .salud-main > h2 {
+    font-size: 2.5em; 
+  }
+  
+  
+  .salud-categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+ 
+  .salud-main > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .promociones-bancarias {
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      max-width: 30%;
+    }
+  }
+  
+  .medicamentos-lista,
+  .auxilios-lista,
+  .personales-lista {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        justify-items: center; 
+  }
+    .medicamentos-item,
+.auxilios-item,
+.personales-item {
+   display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+     padding: 15px;
+    h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color:black;
+  }
+  
+  p {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 5px;
+  }
+  }
+  .precio {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .salud-categoria,
+  .medicamentos-lista,
+  .auxilios-lista,
+  .personales-lista {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+    justify-items: center;
+    
+  }
+  .medicamentos-item,
+.auxilios-item,
+.personales-item {
+   display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color:black;
+  }
+  
+  p {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 5px;
+  }
+.precio {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .imagen-container {
+    position: relative;
+    display: block;
+    width: 100%; 
+   padding-top: 80%;
+    margin: 0 auto 10px auto; 
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+       top: 0;
+      left: 0;
+      object-fit: contain; 
+      display: block;
+      transition: filter 0.3s ease;
+    }
+  }}
+}
+
+/*-------------------belleza responsive------------------*/
+@media (min-width: 768px) {
+  #belleza-page main {
+    padding: 30px; 
+  }
+
+  .pagina-intro {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+  }
+
+  .img-banner {
+    height: 500px; 
+  }
+
+  .cuidado-facial {
+    gap: 30px;
+    margin-top: 20px;
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  .facial-lista {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .facial-item,
+  .maquillajes-item {
+    padding: 20px;
+  h4{
+    font-size: 1em;
+    align-items: center;
+  }
+}
+
+
+  .facial-item img {
+    height: 300px;
+  }
+
+  .maquillajes-lista {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .maquillajes-categoria {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    align-items: center; 
+    h3 {
+      width: auto;
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (min-width: 1024px) {
+   
+}

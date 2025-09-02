@@ -1,7 +1,11 @@
+@use "../variables";
+
+
 @mixin  titulo-seccion-producto {
-    font-size: 2rem;
-    border-bottom: 1px solid #121315;
-    border-top: 1px solid #121315;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid variables.$border_dark;
+    border-top: 1px solid variables.$border_dark;
     padding-bottom:5px;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -11,14 +15,17 @@
 @mixin lista-producto {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  
 }
 @mixin item-producto {
-width: calc(33.33% - 20px);
+    width: calc(33.33% - 20px);
     border: 2px solid #ccc;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+    
 }
 

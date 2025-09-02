@@ -4,21 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FARMACIA DE LA BAHÍA</title>
+  <meta name="keywords" content="farmacia, salud, belleza, suplementos, maquillajes">
+  <meta name="description" content="pagina de farmacia que brinda servicios de salud, belleza y suplementacion deportiva">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="Home">
 
 
   <header>
-    <h1>FARMACIA DE LA BAHÍA</h1>
+   <div class="brand">
+    <div class="logo">
+     <img src="./img/logo-farmacia.png" alt="Farmacia de la Bahía">
+    </div>
+      <h1>FARMACIA DE LA BAHÍA</h1>
+    </div>
+  
     <nav class="nav-bar" >
       <ul class="nav-list">
-        <li><a href="Paginas/Promociones.html">PROMOCIONES</a></li>
         <li><a href="Paginas/Salud.html">SALUD</a></li>
         <li><a href="Paginas/Belleza.html">BELLEZA</a></li>
         <li><a href="Paginas/Suplementos.html">SUPLEMENTOS</a></li>
         <li><a href="Paginas/Nosotros.html">NOSOTROS</a></li>
       </ul>
+       <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    
     </nav>
   </header>
 
@@ -34,22 +48,21 @@
     </section>
 
     <section class="grid-categorias">
-      <div class="categoria-principal">
-        <h3><a href="Paginas/Promociones.html">Promociones Especiales</a></h3>
-        <p>Aprovecha nuestros descuentos y ofertas exclusivas en una amplia gama de productos.</p>
-      </div>
 
       <div class="categoria-principal">
+        <img src="./img/farmacia-salud1.png" alt="Salud y bienestar">
         <h3><a href="Paginas/Salud.html">Salud y Bienestar</a></h3>
         <p>Encuentra todo lo necesario para cuidar tu salud y la de tu familia.</p>
       </div>
 
       <div class="categoria-principal">
+        <img src="./img/farmacia-belleza1.png" alt="Productos belleza">
         <h3><a href="Paginas/Belleza.html">Productos de Belleza</a></h3>
         <p>Descubre nuestra selección de cosméticos y cuidado personal para realzar tu belleza natural.</p>
       </div>
 
       <div class="categoria-principal">
+        <img src="./img/farmacia-suplementos.png" alt="Suplementos Nutricionales">
         <h3><a href="Paginas/Suplementos.html">Suplementos Nutricionales</a></h3>
         <p>Potencia tu rendimiento y bienestar con nuestra variedad de suplementos.</p>
       </div>

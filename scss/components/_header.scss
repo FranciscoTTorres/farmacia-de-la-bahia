@@ -1,0 +1,116 @@
+@use "../variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+header {
+  position: static;
+  top: auto;
+  z-index: 1000; 
+  padding: 10px; 
+  background-color: variables.$primary_color;
+  color:variables.$text-negro;
+  box-shadow: 0 2px 4px variables.$shadow-header; 
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+.brand {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+    
+   .logo {
+    img {
+      height: 70px; 
+      width: auto;
+    }
+  }
+
+  h1 {
+   
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    padding: 5px 10px; 
+    transition: all 0.3s ease-in-out;
+  }
+}
+.search-box {
+     
+        display: flex;
+        align-items: center;
+        width: 100%; 
+        justify-content: center;
+
+        input[type="text"] {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1em;
+            outline: none;
+            width: 80%; 
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: variables.$secondary_color;
+            color: variables.$primary_color;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: (variables.$secondary_color, 10%);
+            }
+        }
+    }
+.nav-bar  {
+   display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+    gap: 10px;
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+        li  {
+          a {
+              text-decoration: none;
+              color: variables.$text-claro;
+              font-weight: bold;
+              font-size: 1.1em;
+               padding: 5px 10px;
+              border-radius: 5px;
+              background-color: rgba(40, 152, 40, 0.316);
+              box-shadow: 0 2px 4px variables.$shadow-suave;
+              transition: background 0.3s;
+
+              &:hover {
+                  background-color: rgba(30, 120, 30, 0.5);
+                }
+              }
+            }
+          }
+        }

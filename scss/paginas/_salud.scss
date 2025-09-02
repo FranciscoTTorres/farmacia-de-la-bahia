@@ -1,39 +1,48 @@
+@use "../variables";
 @use "../abstracts/mixins.scss";
 
 .salud-main {
   text-align: center;
   margin-bottom: 40px;
+  padding: 0 15px;
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #050505;
     margin-bottom: 10px;
     font-weight: bold;
   }
+  .salud-categoria{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
 
   img {
-  height: 400px;
-  width: 750px;
-  margin-left: 82px;
+    width: 100%; 
+    height: auto; 
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 }
 .redireccion {
   text-decoration: none;
-  color: #333;
+  color: variables.$text-negro;
 
-  &hover {
-    color: #007bff;
-  }
+    &:hover {
+      color: #007bff;
+    }
 }
 
 .promociones-bancarias {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
   cursor: pointer;
 
   img {
-    max-width: 30%;
+    max-width: 80%;
     height: auto;
   }
 }
@@ -41,49 +50,110 @@
 .medicamentos-venta-libre,
  .primeros-auxilios,
   .controles-personales{
-   h2 {
+    
     @include mixins.titulo-seccion-producto;
-   }
+   
 }
 
 .medicamentos-lista,
 .auxilios-lista,
 .personales-lista{
-  h2{
+  
     @include mixins.lista-producto;
-  }
+     display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .medicamentos-item,
 .auxilios-item,
 .personales-item {
   @include mixins.item-producto;
-  img {
-  width: 150px;
-  height: 200px;
-  object-fit: fill;
+    background-color: #f2f2f2;
+ 
+  .imagen-container{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 80%;
+        margin-bottom: 10px; 
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+      display: block; 
+      transition: filter 0.3s ease;
+    }
   }
-  h3 {
-    font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+    .overlay {
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity 0.3s ease, box-shadow 0.3s ease;
+      .overlay p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0; 
+      }
+    }
+    &:hover {
+        img{  
+            opacity: 0.5;
+        }
+        .overlay {
+            opacity: 1;
+        }
+    }
   }
+  h4 {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+    color: variables.$text-negro;
+    font-weight: bold;
+  }
+
   .precio  {
-  font-weight: bold;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  
+  &:hover {
+    .overlay {
+      opacity: 1; 
+    }
   }
 }
 
-.boton-comprar {
-  background-color: #4b4f52;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  .boton-comprar  {
+    background-color: #4b4f52; 
+    color: variables.$secondary_color; 
+    font-weight: bold; 
+    font-size: 1rem;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
 
-  &hover {
-   background-color: #2b3036;
-  }
+      &:hover {
+        background-color: #2b3036; 
+      }
 }
-

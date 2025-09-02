@@ -2,147 +2,213 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FARMACIA DE LA BAHÍA - Belleza</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FARMACIA DE LA BAHÍA - Belleza</title>
+  <meta name="keywords" content="belleza, cremas, cuidado facial, maquillajes, labiales, bases, corrector">
+  <meta name="description" content="seccion de la web farmacia, que brinda productos de cuidado facial como serum y cremas , maquillajes como labiales, contornos y bases">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body id="belleza-page">
-
-  <header>
-    <h1>FARMACIA DE LA BAHÍA</h1>
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li><a href="../index.html">INICIO</a></li>
-        <li><a href="Promociones.html">PROMOCIONES</a></li>
-        <li><a href="Salud.html">SALUD</a></li>
-        <li><a href="Belleza.html">BELLEZA</a></li>
-        <li><a href="Suplementos.html">SUPLEMENTOS</a></li>
-        <li><a href="Nosotros.html">NOSOTROS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="seccion-main">
-    <section class="pagina-intro">
-      <h2>Nuestra Sección de Belleza</h2>
-      <p>Descubrí nuestra selección exclusiva de productos para el cuidado de la piel, cabello y maquillaje. Belleza que nutre desde adentro hacia afuera.</p>
-      <img src="../img/belleza.jpg.jpg" alt="Productos de belleza en estantes de farmacia" class="img-banner">
-    </section>
-
-    <section class="cuidado-facial">
-      <h3>Cuidado Facial</h3>
-
-      <div class="facial-lista">
-        <article class="facial-item">
-          <h4>Crema Hidratante Piel Seca</h4>
-          <img src="../img/crema-facial.jpg" alt="Crema hidratante para piel seca" />
-          <p>Hidratación profunda y duradera. Con ácido hialurónico. Crema para el día y la noche.</p>
-           <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-        </article>
-
-        <article class="facial-item">
-          <h4>Serum Vitamina C</h4>
-          <img src="../img/serum.jpg" alt="Serum con vitamina C" />
-          <p>Iluminá y revitalizá tu piel con los mejores serum del mercado.</p>
-           <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-        </article>
-
-        <article class="facial-item">
-          <h4>Agua Micelar</h4>
-          <img src="../img/Agua Micelar.jpg" alt="Agua Micelar">
-          <p>Hidrata y limpia tu cara  y dejala lista para una buena limpieza.</p>
-           <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-        </article>
-      </div>
-    </section>
-    <section class="maquillajes">
-      <h2>Maquillajes</h2>
-      <div class="maquillajes-categoria">
-        <h3>Labiales</h3>
-        <div class="maquillajes-lista">
-          <div class="maquillajes-item">
-            <h4>labial Maybelline New York</h4>
-            <img src="../img/labial- maybelline.jpg" alt="Labial Maybelline New York" width="150" height="200">
-             <p class="presentacion"> Presentacion: Paquete 200 gr</p>
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-          </div>
-          <div class="maquillajes-item">
-            <h4>Labial L´Oreal de Paris</h4>
-            <img src="../img/labial-loreal.jpg" alt="Labial L´Oreal" width="150" height="200">
-               <p class="presentacion"> Presentacion: Paquete 200 gr</p>
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-          </div>
-          <div class="maquillajes-item">
-            <h4>Labial Vogue</h4>
-            <img src="../img/labial-vogue.jpg" alt="Labial de Vogue"width="150" height="200">
-               <p class="presentacion"> Presentacion: Paquete 200 gr</p>
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
-          </div>
+ <header>
+          <div class="brand">
+    <div class="logo">
+     <img src="../img/logo-farmacia.png" alt="Farmacia de la Bahía">
+    </div>
+      <h1>FARMACIA DE LA BAHÍA</h1>
+    </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="Salud.html">SALUD</a></li>
+                <li><a href="Belleza.html">BELLEZA</a></li>
+                <li><a href="Suplementos.html">SUPLEMENTOS</a></li>
+                <li><a href="Nosotros.html">NOSOTROS</a></li>
+            </ul>
+            <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
         </div>
-      </div>
+        </nav>
+    </header>
+
+  <main id="seccion-main" class="container">
+    <section class="pagina-intro text-center my-4">
+      <h2>Nuestra Sección de Belleza</h2>
+      <p>Descubrí nuestra selección exclusiva de productos para el cuidado de la piel, cabello y maquillaje. Belleza que nutre desde adentro hacia afuera.</p>
+      <img src="../img/belleza.jpg.jpg" alt="Productos de belleza en estantes de farmacia" class="img-fluid rounded my-4">
+    </section>
+
+    <section class="cuidado-facial">
+      <h3 class="text-center my-4">Cuidado Facial</h3>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <article class="col">
+          <div class="card text-center card-small">
+            <img src="../img/crema-facial.jpg" class="card-img-top" alt="Crema hidratante para piel seca" />
+           <div class="card-body">
+             <h4 class="card-title">Crema Hidratante Piel Seca</h4>
+              <p class="card-text">Hidratación profunda y duradera. Con ácido hialurónico. Crema para el día y la noche.</p>
+              <p class="precio fw-bold">$X.XXX</p>
+              <button class="btn btn-dark">Agregar al Carrito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card text-center card-small">
+            <img src="../img/serum.jpg" class="card-img-top" alt="Serum con vitamina C" />
+            <div class="card-body">
+              <h4 class="card-title">Serum Vitamina C</h4>
+              <p class="card-text">Iluminá y revitalizá tu piel con los mejores serum del mercado.</p>
+              <p class="precio fw-bold">$X.XXX</p>
+              <button class="btn btn-dark">Agregar al Carrito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card text-center card-small">
+            <img src="../img/Agua Micelar.jpg" class="card-img-top" alt="Agua Micelar">
+            <div class="card-body">
+              <h4 class="card-title">Agua Micelar</h4>
+              <p class="card-text">Hidrata y limpia tu cara y dejala lista para una buena limpieza.</p>
+              <p class="precio fw-bold">$X.XXX</p>
+              <button class="btn btn-dark">Agregar al Carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <section class="maquillajes my-5">
+      <h2 class="text-center my-4">Maquillajes</h2>
       <div class="maquillajes-categoria">
-        <h3>Bases</h3>
-        <div class="maquillajes-lista">
-          <div class="maquillajes-item">
-            <h4>Base L´Oreal de Paris</h4>
-            <img src="../img/LorealBase.jpg" alt="Base L´Oreal de Paris">
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+        <h3 class="w-100 text-center py-2 bg-light rounded">Labiales</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/labial- maybelline.jpg" class="card-img-top" alt="Labial Maybelline New York">
+              <div class="card-body">
+                <h4 class="card-title">Labial Maybelline New York</h4>
+                <p class="card-text">Presentacion: Paquete 200 gr</p>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
               </div>
-          <div class="maquillajes-item">
-            <h4>Base Revlon</h4>
-            <img src="../img/revlon base.jpg" alt="Base Revlon">
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/labial-loreal.jpg" class="card-img-top" alt="Labial L´Oreal">
+              <div class="card-body">
+                <h4 class="card-title">Labial L´Oreal de Paris</h4>
+                <p class="card-text">Presentacion: Paquete 200 gr</p>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
               </div>
-           <div class="maquillajes-item">
-            <h4>Base Maybelline</h4>
-            <img src="../img/Maybelline-base.jpg" alt="Base Maybelline">
-              <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card  text-center card-small">
+              <img src="../img/labial-vogue.jpg" class="card-img-top" alt="Labial de Vogue">
+              <div class="card-body">
+                <h4 class="card-title">Labial Vogue</h4>
+                <p class="card-text">Presentacion: Paquete 200 gr</p>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="maquillajes-categoria">
-        <h3>Corrector de pestañas</h3>
-        <div class="maquillajes-lista">
-          <div class="maquillajes-item">
-            <h4>Corrector de Pestañas L´Oreal de Paris</h4>
-            <img src="../img/pestaña-loreal.jpg" alt="Corrector de pestañas Loreal">
-            <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+
+      <div class="maquillajes-categoria mt-5">
+        <h3 class="w-100 text-center py-2 bg-light rounded">Bases</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/LorealBase.jpg" class="card-img-top" alt="Base L´Oreal de Paris">
+              <div class="card-body">
+                <h4 class="card-title">Base L´Oreal de Paris</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
           </div>
-          <div class="maquillajes-item">
-            <h4>Corrector de Pestañas Maybelline</h4>
-            <img src="../img/pestaña-maybelline.jpg" alt="Corrector de pestañas Maybelline">
-            <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/revlon base.jpg" class="card-img-top" alt="Base Revlon">
+              <div class="card-body">
+                <h4 class="card-title">Base Revlon</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
           </div>
-          <div class="maquillajes-item">
-            <h4>Corrector de Pestañas Vogue</h4>
-            <img src="../img/pestaña-vogue.jpg" alt="Corrector de pestañas Vogue">
-            <p class="precio">$X.XXX</p>
-              <button class="boton-comprar">Agregar al Carrito</button>
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/Maybelline-base.jpg" class="card-img-top" alt="Base Maybelline">
+              <div class="card-body">
+                <h4 class="card-title">Base Maybelline</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maquillajes-categoria mt-5">
+        <h3 class="w-100 text-center py-2 bg-light rounded">Corrector de pestañas</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/pestaña-loreal.jpg" class="card-img-top" alt="Corrector de pestañas Loreal">
+              <div class="card-body">
+                <h4 class="card-title">Corrector de Pestañas L´Oreal de Paris</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/pestaña-maybelline.jpg" class="card-img-top" alt="Corrector de pestañas Maybelline">
+              <div class="card-body">
+                <h4 class="card-title">Corrector de Pestañas Maybelline</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center card-small">
+              <img src="../img/pestaña-vogue.jpg" class="card-img-top" alt="Corrector de pestañas Vogue">
+              <div class="card-body">
+                <h4 class="card-title">Corrector de Pestañas Vogue</h4>
+                <p class="precio fw-bold">$X.XXX</p>
+                <button class="btn btn-dark">Agregar al Carrito</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="tips">
-      <h3>Tips y Consejos</h3>
-      <p>Explorá nuestros artículos y guías sobre rutinas de belleza, ingredientes clave y cuidado personalizado.</p>
-    </section>
-  </main>
+    <section class="tips text-center my-5">
+      <h3>Tips y Consejos</h3>
+      <p>Explorá nuestros artículos y guías sobre rutinas de belleza, ingredientes clave y cuidado personalizado.</p>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; FARMACIA DE LA BAHÍA, PLAYA UNIÓN. Siempre junto a vos.</p>
-  </footer>
+  <footer>
+    <p>&copy; FARMACIA DE LA BAHÍA, PLAYA UNIÓN. Siempre junto a vos.</p>
+  </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
